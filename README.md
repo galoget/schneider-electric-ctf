@@ -28,6 +28,28 @@ The scoring distribution will be based on:
 
 For this competition a standard Kali Linux 2022.1 VM will be used. Executed commands will be included as text to ease the reproduction of steps if required.
 
+In this challenge we recovered **12 FLAGS** corresponding to:
+
+- 2 OSINT
+- 4 WEB
+- 3 SYSTEM
+- 3 BONUS
+
+## FLAGS
+- `FLAG{ALWAYS_CHECK_COMMITS}`
+- `API_FLAG{Never_public_your_secret}`
+- `FLAG{SSRF_PARA_TOD@S_XD}`
+- `FLAG{sanitize_input}`
+- `FLAG{Mas_uno_por_revisar_sistema}`
+- `FLAG{Buen_Password_Spraying_Eh?}`
+- `FLAG{Pesadilla_en_el_trabajo}`
+- `FLAG{Ay_Ay_Vigila_Tu_Puesto}`
+- `FLAG{A_su_servicio}`
+- `FLAG{El_Buen_OSINT_Naito}`
+- `FLAG{Sticky_Notes_FTW}`
+- `FLAG{Update_Plugins!}`
+
+
 ## FLAG{ALWAYS_CHECK_COMMITS}
 
 After setting up the environment to attack the target machine. First, we scanned all available ports to discover running services.
@@ -38,8 +60,6 @@ This was done with the following command:
 ┌──(galoget㉿hackem)-[~]
 └─$ nmap -n -Pn -p- 192.168.2.16 --open
 ```
-
-![alt text for screen readers](/path/to/image.png "Text to show on mouseover")
 
 With the previous results we focused on enumerating and gathering more information from open ports only. For this, we used `nmap` with additional parameters:
 
